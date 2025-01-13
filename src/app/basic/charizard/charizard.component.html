@@ -1,0 +1,10 @@
+<h1>Pokemon</h1>
+<div *ngIf="!pokemon; else elseBlock ">
+  <h2>Loading...</h2>
+</div>
+
+<ng-template #elseBlock>
+  <h3>{{pokemon.name | titlecase }}</h3>
+  <img [src]="pokemon.sprites.front_default" [alt]="pokemon.name">
+</ng-template>
+

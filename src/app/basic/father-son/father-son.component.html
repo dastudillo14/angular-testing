@@ -1,0 +1,8 @@
+<h5>son</h5>
+
+<code>{{client | json }} </code>
+<br><br>
+
+<button *ngIf="client"  data-test="btnUpdate" (click)="onChange(5)" class="btn btn-outline-primary mx-2">Cambiar ID</button>
+
+<button *ngIf="client" data-test="btnDelete" (click)="onDelete()" class="btn btn-outline-danger">Borrar cliente</button>
